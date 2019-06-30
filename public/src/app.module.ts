@@ -20,6 +20,7 @@ import { CustomerService } from './customers/customer.service';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderService } from './orders/order.service';
 import { CreateOrderComponent } from './createOrder/create-order.component';
+import { CustomLabelComponent } from './customLabel/custom-label.component';
 
 @NgModule({
   imports: [BrowserModule, UpgradeModule, HttpClientModule, FormsModule],
@@ -30,6 +31,7 @@ import { CreateOrderComponent } from './createOrder/create-order.component';
     OrdersComponent,
     CreateOrderComponent,
     CustomerDetailComponent,
+    CustomLabelComponent,
     DiscountDirective
   ],
   entryComponents: [
@@ -38,6 +40,7 @@ import { CreateOrderComponent } from './createOrder/create-order.component';
     CustomersTableComponent,
     OrdersComponent,
     CreateOrderComponent,
+    CustomLabelComponent,
     CustomerDetailComponent
   ],
   providers: [

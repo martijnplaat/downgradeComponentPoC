@@ -31,6 +31,7 @@ import { CustomerService } from './customers/customer.service';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderService } from './orders/order.service';
 import { CreateOrderComponent } from './createOrder/create-order.component';
+import { CustomLabelComponent } from './customLabel/custom-label.component';
 
 export const MODULE_NAME = 'app';
 
@@ -42,6 +43,7 @@ angular.module(MODULE_NAME, ['ngRoute'])
   .component('orderDetail', orderDetailComponent)
   .component('products', productsComponent)
   .component('productDetail', productDetailComponent)
+  .directive('editableLabel', downgradeComponent({ component: CustomLabelComponent, outputs: ['updateLabel'] }))
   .directive('validateDate', validateDateDirective)
   .service('addressService', AddressService)
   .service('productService', ProductService)
